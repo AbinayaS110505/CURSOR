@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cursor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="snow"></div>
+    <div class="emoji">💥</div>
+    <h1 class="text">Move your cursor! 😎</h1>
+
+    <script>const emoji = document.querySelector('.emoji');
+
+        document.addEventListener('mousemove', (e) => {
+            emoji.style.left = `${e.clientX - 20}px`;
+            emoji.style.top = `${e.clientY - 20}px`;
+        });
+        </script>
+</body>
+</html>
